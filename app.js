@@ -24,7 +24,7 @@ app.use("/auth", authRouter);
 const profileRouter = require("./routes/profile.routes");
 app.use("/profiles", profileRouter);
 
-const handoverKitRouter = require("./routes/handoverkit.routes");
+const handoverKitRouter = require("./routes/handoverKit.routes");
 app.use("/handover-kits", handoverKitRouter);
 
 const userRouter = require("./routes/user.routes");
