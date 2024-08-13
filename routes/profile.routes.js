@@ -16,7 +16,7 @@ router.get("/:id", isAuthenticated, async (req, res) => {
     }
 
     const profile = await Profile.findById(req.params.id)
-      .populate("user")
+      .populate("user", "username email") // Populate the username and email from the User model
       .lean();
     console.log("Fetched profile:", profile); // Debug log
 
